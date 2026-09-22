@@ -220,7 +220,7 @@ export default function Home() {
               className="text-sm text-gray-600 leading-relaxed cursor-pointer"
             >
               By checking this box and submitting this form, you agree to
-              receive customer care text messages from Riverside Unified School District. I
+              receive transactional account notification text messages from Riverside Unified School District. I
               understand I may opt out of SMS communication by replying
               &apos;STOP&apos;. Reply HELP or email{" "}
               <a

@@ -92,8 +92,8 @@ export default function PrivacyPolicy() {
               4. SMS Marketing Communications
             </h2>
             <p className="leading-relaxed">
-              If you opt in to receive SMS marketing messages, we will send you
-              promotional text messages related to our services. Message
+              If you opt in to receive SMS messages, we will send you
+              transactional account notification text messages related to your account activity. Message
               frequency varies. Message and data rates may apply. You may opt
               out at any time by replying STOP to any message. For help, reply
               HELP or contact us at{" "}

@@ -115,11 +115,11 @@ export default function TermsOfUse() {
             </h2>
             <p className="leading-relaxed mb-3">
               Riverside Unified School District uses SMS (text message) communications
-              exclusively for <strong>customer care purposes</strong>. This
-              includes responding to inquiries, providing updates on your
-              requests, and offering support related to our services.
+              exclusively for <strong>transactional account notification purposes</strong>. This
+              includes sending account updates, transaction confirmations, and
+              important notifications related to your account or requests.
               SMS will <strong>not</strong> be used for unsolicited marketing or
-              promotional campaigns unrelated to your inquiry.
+              promotional campaigns unrelated to your account activity.
             </p>
             <p className="leading-relaxed mb-3">
               By opting in to receive SMS messages from Riverside Unified School District, you
