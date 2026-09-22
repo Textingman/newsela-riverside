@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Munz Construction</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <span class="topbar-title">Munz Construction</span>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-box">
+        <img src="https://munzconstruction.homesvc.co/favicon.ico" alt="Munz Construction Logo" class="hero-logo" onerror="this.style.display='none'"/>
+        <span class="hero-logo-text">Munz<br/>Construction</span>
+      </div>
+      <a href="#contact" class="btn-visit">Visit Us <span class="arrow">&#8250;</span></a>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section" id="contact">
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone number" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Message" rows="5"></textarea>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="privacyCheck" name="privacyCheck" />
+        <label for="privacyCheck">
+          I have read and agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="smsCheck" name="smsCheck" />
+        <label for="smsCheck">
+          By checking this box and submitting this form, I agree to receiving marketing SMS messages from Munz Construction. Message frequency varies. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help.
+        </label>
+      </div>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <div class="footer-item">
+          <span class="footer-icon">&#128205;</span>
+          <div>
+            <strong>Mailing Address</strong><br/>
+            Munz Construction<br/>
+            201 Buck Road<br/>
+            Holland, PA 18966
+          </div>
+        </div>
+        <div class="footer-item">
+          <span class="footer-icon">&#9993;</span>
+          <a href="mailto:info@munzconstruction.com">info@munzconstruction.com</a>
+        </div>
+        <div class="footer-item">
+          <span class="footer-icon">&#128222;</span>
+          <a href="tel:2159538833">(215) 953-8833</a>
+        </div>
+      </div>
+      <div class="footer-brand">
+        <p class="footer-company-name">Munz Construction</p>
+        <p class="footer-copy">2026 - Munz Construction</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

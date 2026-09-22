@@ -1,0 +1,336 @@
+/* ===========================
+   Global Reset & Base Styles
+   =========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background: #fff;
+}
+
+a {
+  color: #8b1a2e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Top Bar
+   =========================== */
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topbar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: url('https://munzconstruction.homesvc.co/') center center / cover no-repeat;
+  /* Fallback gradient if image doesn't load */
+  background-color: #6b7a8d;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Use a real house image as background */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80') center center / cover no-repeat;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-logo-box {
+  background: #fff;
+  border-radius: 6px;
+  padding: 18px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.hero-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.hero-logo-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #8b1a2e;
+  text-align: center;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.btn-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #8b1a2e;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.btn-visit:hover {
+  background: #6e1424;
+  text-decoration: none;
+}
+
+.btn-visit .arrow {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* ===========================
+   Contact Form Section
+   =========================== */
+.contact-form-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px 20px 48px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #8b1a2e;
+}
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-check input[type="checkbox"] {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: #8b1a2e;
+  cursor: pointer;
+}
+
+.form-check label {
+  font-size: 0.93rem;
+  color: #444;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form-check label a {
+  color: #8b1a2e;
+  text-decoration: underline;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: #8b1a2e;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-submit:hover {
+  background: #6e1424;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+.footer {
+  background: #1a1a1a;
+  color: #ccc;
+  padding: 40px 20px 28px;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-contact h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-item strong {
+  color: #fff;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.footer-icon {
+  font-size: 1.1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.footer-item a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-brand {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-company-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.footer-copy {
+  font-size: 0.88rem;
+  color: #888;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 600px) {
+  .hero {
+    height: 260px;
+  }
+
+  .hero-logo-box {
+    padding: 14px 24px;
+    min-width: 140px;
+  }
+
+  .hero-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn-visit {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
+
+  .contact-form-section {
+    padding: 24px 16px 36px;
+  }
+}
