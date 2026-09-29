@@ -42,9 +42,6 @@ export default function Calendar() {
           See Calendar
         </a>
 
-        <p className="text-xs text-gray-400">
-          Opens the official district calendar
-        </p>
       </div>
     </div>
   );
