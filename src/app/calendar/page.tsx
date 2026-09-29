@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Calendar | Riverside Unified School District",
@@ -12,9 +13,7 @@ export default function Calendar() {
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm px-8 py-10 flex flex-col items-center gap-6 text-center">
         {/* Brand Icon + Name */}
         <div className="flex flex-col items-center gap-3">
-          <div className="w-14 h-14 rounded-full bg-[#971a27] flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-2xl">R</span>
-          </div>
+          <Image src="/logo.png" alt="Riverside Unified School District Logo" width={56} height={56} className="object-contain" />
           <p className="text-sm font-medium text-gray-500 uppercase tracking-widest">
             Riverside Unified School District
           </p>
