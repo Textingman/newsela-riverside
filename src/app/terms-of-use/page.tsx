@@ -138,10 +138,10 @@ export default function TermsOfUse() {
               <li>
                 For help, reply <strong>HELP</strong> or email{" "}
                 <a
-                  href="mailto:support@riversideunifiedsd.org"
+                  href="mailto:support@riversideunifiedschool.com"
                   className="text-[#971a27] underline"
                 >
-                  support@riversideunifiedsd.org
+                  support@riversideunifiedschool.com
                 </a>
                 .
               </li>
@@ -204,10 +204,10 @@ export default function TermsOfUse() {
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:support@riversideunifiedsd.org"
+                  href="mailto:support@riversideunifiedschool.com"
                   className="text-[#971a27] underline"
                 >
-                  support@riversideunifiedsd.org
+                  support@riversideunifiedschool.com
                 </a>
               </p>
               <p>

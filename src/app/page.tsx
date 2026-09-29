@@ -214,10 +214,10 @@ export default function Home() {
               understand I may opt out of SMS communication by replying
               &apos;STOP&apos;. Reply HELP or email{" "}
               <a
-                href="mailto:support@riversideunifiedsd.org"
+                href="mailto:support@riversideunifiedschool.com"
                 className="text-[#971a27] underline"
               >
-                support@riversideunifiedsd.org
+                support@riversideunifiedschool.com
               </a>{" "}
               for help. Message and Data rates may apply. Message frequency
               varies. Carriers are not liable for delayed or undelivered
