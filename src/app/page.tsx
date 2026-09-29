@@ -38,9 +38,7 @@ export default function Home() {
       {/* Top Bar */}
       <header className="bg-white border-b border-gray-200 px-5 py-3.5 sticky top-0 z-50">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-[#8b1a2e] flex items-center justify-center flex-shrink-0">
-            <span className="text-white font-bold text-sm">R</span>
-          </div>
+          <Image src="/logo.png" alt="Riverside Unified School District Logo" width={32} height={32} className="flex-shrink-0 object-contain" />
           <span className="text-base font-semibold text-gray-900 tracking-tight">
             Riverside Unified School District
           </span>
@@ -64,15 +62,7 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center gap-7">
           {/* Logo Box */}
           <div className="bg-white rounded-md px-9 py-5 flex flex-col items-center gap-2 shadow-md min-w-[180px]">
-            {/* Logo placeholder - replace with actual logo */}
-            <div className="w-20 h-20 rounded-full bg-[#8b1a2e] flex items-center justify-center">
-              <span className="text-white font-bold text-xl">R</span>
-            </div>
-            <span className="text-[#8b1a2e] font-bold text-lg uppercase tracking-wider text-center leading-tight">
-              Riverside Unified
-              <br />
-              School District
-            </span>
+            <Image src="/logo.png" alt="Riverside Unified School District Logo" width={80} height={80} className="object-contain" />
           </div>
 
         </div>
