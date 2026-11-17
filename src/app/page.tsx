@@ -27,10 +27,50 @@ export default function Home() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    setSubmitting(true);
+
+    const payload = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      privacyAgreed: formData.privacyAgreed ? "Yes" : "No",
+      smsAgreed: formData.smsAgreed ? "Yes" : "No",
+    };
+
+    try {
+      const response = await fetch(
+        "https://formspree.io/f/cb9f569e10c843168aac66855faf95c2",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+          privacyAgreed: false,
+          smsAgreed: false,
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -73,6 +113,13 @@ export default function Home() {
         id="contact"
         className="flex-1 max-w-3xl w-full mx-auto px-5 py-9"
       >
+        {submitted ? (
+          <div className="flex flex-col items-center justify-center py-16 gap-4 text-center">
+            <div className="text-5xl">✅</div>
+            <h2 className="text-2xl font-semibold text-gray-900">Thank you!</h2>
+            <p className="text-gray-600">Your message has been submitted successfully. We&apos;ll be in touch soon.</p>
+          </div>
+        ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
           {/* First Name */}
           <div className="flex flex-col gap-1.5">
