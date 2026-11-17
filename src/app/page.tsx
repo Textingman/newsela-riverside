@@ -47,7 +47,7 @@ export default function Home() {
 
     try {
       const response = await fetch(
-        "https://formspree.io/f/cb9f569e10c843168aac66855faf95c2",
+        "https://formspree.io/p/3137188115735641607/f/newsela-riverside",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
